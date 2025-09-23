@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Loader -->
+    <!-- Loader 
     <div class="loading-page">
         <svg id="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt" height="147.000000pt" viewBox="0 0 300.000000 147.000000" preserveAspectRatio="xMidYMid meet">
             <defs>
@@ -31,7 +33,7 @@
             <div class="made-by">Made by</div>
             <div class="logo-name">Debug Delta</div>
         </div>
-    </div> 
+    </div> -->
 
     <!-- Navbar Section -->
     <nav class="navbar">
@@ -44,21 +46,21 @@
         </div>
         <div class="logo-text">Smart City</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#exploration">Exploration</a></li>
-            <li><a href="#security">Security</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#maintenance">Maintenance</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="exploration.html">Exploration</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
         </ul>
-      <div class="nav-buttons">
-          <button class="signup-btn">Login/Sign Up</button>
-      </div>
+        <div class="nav-buttons">
+            <button class="signup-btn">Login/Sign Up</button>
+        </div>
     </nav>
 
     <!-- Main Section -->
     <section id="home" class="main-section">
-        <h1>Smart City Management</h1>
-        <p>For Sustainable India</p>
+        <h1>Title</h1>
+        <p>description</p>
     </section>
 
     <!-- News Section with Scroll Animation -->
@@ -80,23 +82,23 @@
         <div class="messages-container">
             <div class="message-box">
                 <div class="icon"><i class="fas fa-user-circle"></i></div>
-                <h3 class="name">System Team</h3>
-                <p class="role">Admin</p>
-                <p class="msg">System Update: New features added for better user experience.</p>
+                <h3 class="name">Name</h3>
+                <p class="role">Role</p>
+                <p class="msg">Messages by them</p>
                 <button class="read-more">Read More</button>
             </div>
             <div class="message-box middle">
                 <div class="icon"><i class="fas fa-user-circle"></i></div>
-                <h3 class="name">Security Team</h3>
-                <p class="role">Moderator</p>
-                <p class="msg">Security Alert: Ensure your account is protected.</p>
+                <h3 class="name">Name</h3>
+                <p class="role">Role</p>
+                <p class="msg">Messages by them</p>
                 <button class="read-more">Read More</button>
             </div>
             <div class="message-box">
                 <div class="icon"><i class="fas fa-user-circle"></i></div>
-                <h3 class="name">Support Team</h3>
-                <p class="role">Staff</p>
-                <p class="msg">Maintenance: Scheduled downtime on Sunday.</p>
+                <h3 class="name">Name</h3>
+                <p class="role">Role</p>
+                <p class="msg">Messages by them</p>
                 <button class="read-more">Read More</button>
             </div>
         </div>
@@ -106,65 +108,87 @@
     <section class="explore-section">
         <h2><span class="blue-text">Of things</span> Explore</h2>
         <div class="explore-tabs">
-            <button class="tab-btn active" onclick="showTab('academic')">Academic Overview</button>
-            <button class="tab-btn" onclick="showTab('infrastructure')">Infrastructure</button>
-            <button class="tab-btn" onclick="showTab('activities')">Activities</button>
-            <button class="tab-btn" onclick="showTab('initiative')">Initiative</button>
+            <button class="tab-btn active" onclick="showTab('academic')">Option 1</button>
+            <button class="tab-btn" onclick="showTab('infrastructure')">Option 2</button>
+            <button class="tab-btn" onclick="showTab('activities')">Option 3</button>
+            <button class="tab-btn" onclick="showTab('initiative')">Option 4</button>
         </div>
         <div class="explore-content">
             <div id="academic" class="tab-content active">
                 <div class="access-box">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+                        </svg>
                     </div>
                     <div class="text">
-                        <h3>Academic planner</h3>
-                        <p>Academic Calendar Activities 2024-25th by Theme</p>
+                        <h3>Title</h3>
+                        <p>Content</p>
                     </div>
                 </div>
                 <div class="access-box">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669"
+                            viewBox="0 0 24 24">
+                            <path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z" />
+                        </svg>
                     </div>
                     <div class="text">
-                        <h3>Educational results</h3>
-                        <p>Academic result of the school</p>
+                        <h3>Title</h3>
+                        <p>Content</p>
                     </div>
                 </div>
                 <div class="access-box">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
                     </div>
                     <div class="text">
-                        <h3>Children's garden</h3>
-                        <p>Balvatika-3 is running in the school</p>
+                        <h3>Title</h3>
+                        <p>Content</p>
                     </div>
                 </div>
                 <div class="access-box">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+                        </svg>
                     </div>
                     <div class="text">
-                        <h3>Academic planner</h3>
-                        <p>Academic Calendar Activities 2024-25th by Theme</p>
+                        <h3>Title</h3>
+                        <p>Content</p>
                     </div>
                 </div>
                 <div class="access-box">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669"
+                            viewBox="0 0 24 24">
+                            <path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z" />
+                        </svg>
                     </div>
                     <div class="text">
-                        <h3>Educational results</h3>
-                        <p>Academic result of the school</p>
+                        <h3>Title</h3>
+                        <p>Content</p>
                     </div>
                 </div>
                 <div class="access-box">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
                     </div>
                     <div class="text">
-                        <h3>Children's garden</h3>
-                        <p>Balvatika-3 is running in the school</p>
+                        <h3>Title</h3>
+                        <p>Content</p>
                     </div>
                 </div>
             </div>
@@ -265,4 +289,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
