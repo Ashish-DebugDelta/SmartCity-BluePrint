@@ -175,6 +175,10 @@
 }
 
 @media (max-width: 768px) {
+    .cyber-security-intro {
+        height: 120vh;
+    }
+    
     .intro-box, .safety-topic, .safety-topic.reverse {
         flex-direction: column;
         text-align: center;
