@@ -753,7 +753,9 @@
         background: none;
         border: none;
         font-size: 24px;
-        color: #000;
+        background: linear-gradient(to right, #1db56b, #1678e2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         cursor: pointer;
         padding: 5px;
         z-index: 1003;

@@ -1,150 +1,231 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+
+.categories-section {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #059669,#059669, #2563EB);
+    text-align: center;
+    height: 90vh;
 }
 
-/* Navbar Styles */
-.navbar {
+.categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 200px auto;
+}
+
+.category-box {
+    width: 200px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to bottom, #10B981, #3B82F6) border-box;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-box h3 {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.innovations-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.innovations-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #10B981, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.innovations-section .spacer {
+    height: 20px;
+}
+
+.innovations-section .center-red {
+    color: red;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.colleges-section, .schools-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.colleges-section h2, .schools-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #10B981, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-image {
+    margin-bottom: 40px;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 90px auto;
+}
+
+.timeline {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 15px 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    flex-wrap: wrap;
+    padding: 80px 0;
 }
 
-.nav-toggle {
-    display: none;
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: none;
+    border-top: 3px dashed #10B981;
+    z-index: 0;
+    transform: translateY(-50%);
 }
 
-.nav-logo {
-    width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      background: linear-gradient(to bottom right, #1db56b, #1678e2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px;
-}
-
-.nav-logo .logo {
-    height: 30px;
-}
-
-.logo-text {
-  margin-left: -170px;
-  font-size: 20px;
-  font-weight: bold;
-  background: linear-gradient(to right, #1db56b, #1678e2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  position: relative; 
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-    margin: 0 20px;
-}
-
-.nav-links li a {
-  display: inline-block;
-  padding: 8px 0;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a.gradient-active {
-  background: linear-gradient(to right, #10B981, #3B82F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-
-.moving-underline {
-  position: absolute;
-  bottom: -6px;
-  height: 3px;
-  left: 0;
-  width: 0;
-  border-radius: 3px;
-  pointer-events: none;
-  opacity: 0;
-  transition: left 0.25s cubic-bezier(.2,.9,.2,1), width 0.25s cubic-bezier(.2,.9,.2,1), opacity 0.15s;
-  background: linear-gradient(to right, #10B981, #3B82F6); 
-}
-
-.gradient-text {
-  background: linear-gradient(to right, #10B981, #3B82F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-links li a.active {
-  background: linear-gradient(to right, #10B981, #3B82F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-buttons button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.login-btn {
-    background: linear-gradient(to right, #059669, #2563EB);
-    color: white;
-}
-
-.signup-btn {
-    background: linear-gradient(to right, #10B981, #3B82F6);
-    color: white;
-}
-
-/* Main Section */
-.main-section {
-    text-align: center;
-    padding: 50px;
-    background: linear-gradient(to right, #059669, #059669, #2563EB);
-    color: white;
-    height: 90vh;
+.timeline-item {
+    width: 16%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    min-width: 160px;
+}
+
+.timeline-item.top {
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 115px;
+}
+
+.timeline-item.top .timeline-box {
+    margin-bottom: 10px;
+}
+
+.timeline-item.top .timeline-connector {
+    height: 40px;
+    width: 2px;
+    border-left: 2px dashed #10B981;
+}
+
+.timeline-item.bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 115px;
+}
+
+.timeline-item.bottom .timeline-connector {
+    height: 40px;
+    width: 2px;
+    border-left: 2px dashed #10B981;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 3px solid #3B82F6;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-box {
+    width: 160px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.main-section h1 {
-    font-size: 80px;
-    font-weight: 800;
+.timeline-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    background: linear-gradient(to bottom, #10B981, #3B82F6);
+    border-radius: 15px;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
 }
 
-.main-section p {
-    font-size: 74px;
-    font-weight: 100;
-    margin-top: 20px;
+.circle-frame {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(to bottom, #10B981, #3B82F6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
-/* Footer */
+.box-logo {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.timeline-box h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.visit-btn {
+    padding: 8px 22px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #10B981, #3B82F6);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: linear-gradient(to right, #3B82F6, #10B981);
+}
+
 .footer {
     background: linear-gradient(to right, #059669, #059669, #2563EB);
     padding: 40px 20px;
@@ -207,133 +288,152 @@
     opacity: 0.8;
 }
 
-/* Responsive Styles for Mobile Devices */
 @media screen and (max-width: 768px) {
-    .navbar {
-        padding: 10px 15px;
-        position: relative;
-    }
 
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-logo {
-        width: 32px;
-        height: 32px;
-        margin: 0 10px;
-    }
-
-    .nav-logo .logo {
-        height: 20px;
-    }
-
-    .logo-text {
-        font-size: 14px;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1001;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .nav-links li a {
-        font-size: 16px;
-        padding: 10px;
-        display: block;
-    }
-
-    .moving-underline {
-        display: none;
-    }
-
-    .nav-buttons button {
-        padding: 8px 16px;
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .main-section {
-        padding: 15px;
-        height: auto;
-        min-height: 50vh;
-    }
-
-    .main-section h1 {
+    .colleges-section h2, .schools-section h2 {
         font-size: 28px;
-        margin-top: 40px;
     }
 
-    .main-section p {
-        font-size: 20px;
-        margin-top: 8px;
-    }
-
-    .footer {
-        padding: 15px 10px;
-    }
-
-    .footer-nav {
+    .timeline {
+        position: relative;
         flex-direction: column;
-        gap: 10px;
+        padding: 20px 0;
+        width: 100%;
     }
 
-    .footer-nav li a {
-        font-size: 13px;
+    .timeline-line {
+        position: absolute;
+        left: 31px;
+        width: 3px;
+        height: 100%;
+        background: none;
+        border-left: 3px dashed #10B981;
+        top: 0;
+        bottom: 0;
+        margin-left: -1.5px;
+        transform: none;
+        z-index: 0;
     }
 
-    .footer .madeby {
-        font-size: 14px;
+    .timeline-item {
+        position: relative;
+        background-color: inherit;
+        width: 100%;
+        padding: 10px 25px 10px 70px;
+        margin: 40px 0;
+        min-width: auto;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .footer-logo {
-        width: 50px;
-        height: 50px;
+    .timeline-item.top,
+    .timeline-item.bottom {
+        flex-direction: column;
+        bottom: 0;
+        top: 0;
     }
 
-    .footer-logo img {
-        max-width: 40px;
-        margin: 10px 0;
+    .timeline-connector,
+    .timeline-dot {
+        display: none;
     }
 
-    .footer-copy {
-        font-size: 11px;
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 18px;
+        background-color: white;
+        border: 4px solid #3B82F6;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        z-index: 1;
     }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        left: 31px;
+        top: 50%;
+        border-top: 2px dashed #10B981;
+        z-index: 1;
+    }
+
+    .timeline-box {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-box::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        padding: 3px;
+        background: linear-gradient(to bottom, #10B981, #3B82F6);
+        border-radius: 15px;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: xor;
+        -webkit-mask-composite: xor;
+    }
+
+    .timeline-box h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .circle-frame {
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .visit-btn {
+        align-self: center;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-    .main-section h1 {
+    .colleges-section h2, .schools-section h2 {
         font-size: 24px;
     }
 
-    .main-section p {
-        font-size: 16px;
+    .visit-btn {
+        padding: 6px 18px;
+        font-size: 12px;
     }
 
     .nav-buttons button {
         padding: 6px 12px;
         font-size: 12px;
+    }
+
+    .timeline-item {
+        padding: 10px 15px 10px 60px;
+        margin: 30px 0;
+    }
+
+    .timeline-line {
+        left: 21px;
+        border-left: 3px dashed #10B981;
+    }
+
+    .timeline-item::after {
+        left: 5px;
+    }
+
+    .timeline-item::before {
+        left: 40px;
+        width: 20px;
     }
 }
