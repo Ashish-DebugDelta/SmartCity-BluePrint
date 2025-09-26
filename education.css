@@ -9,14 +9,15 @@
 .categories-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 80px;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 200px auto;
+    margin: 2px auto;
 }
 
 .category-box {
-    width: 200px;
+    width: 300px;
+    height: 400px;
     background: 
         linear-gradient(white, white) padding-box, 
         linear-gradient(to bottom, #10B981, #3B82F6) border-box;
